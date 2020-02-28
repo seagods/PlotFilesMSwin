@@ -1,0 +1,40 @@
+Arrived in Main
+Hardware not Available, using software
+height=600  width=800
+height=600  width=800
+Call event loop with argc=1
+Creating Camera CCam 
+Font 1 is fine!
+Font 2 is fine!
+Font 3 is fine!
+Font 4 is fine!
+Font 5 is fine!
+Font 6 is fine!
+Font 7 is fine!
+Font 8 is fine!
+Font 9 is fine!
+Font 10 is fine!
+Font 11 is fine!
+Font 12 is fine!
+Font 13 is fine!
+My Arse!
+file_in=data.dat
+we are plotting 2 data sets 
+argc=1
+ndata=180  ntype=0  ncol=6  nstyle=1
+point size=2
+ndata=180  ntype=0  ncol=3  nstyle=2
+point size=4
+Legends have been read
+ x axis label in data.dat is daily quota
+ y axis label in data.dat is yearly loss
+ z axis label in data.dat is Giraffes
+ x axis unit in data.dat is Kg per year
+ y axis unit in data.dat is per tonne
+ z axis unit in data.dat is per season
+xmin and xmax are -1  1
+ymin and ymax are -1  1
+zmin and zmax are -3.14159  3.10669
+xrange and xfact are 2  1
+yrange and yfact are 2  1
+zrange and zfact are 6.24828  1

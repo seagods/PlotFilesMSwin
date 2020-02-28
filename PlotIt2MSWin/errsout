@@ -1,0 +1,451 @@
+PlotIt2.cpp: In function 'void EventLoop()':
+PlotIt2.cpp:255:29: error: no match for 'operator<<' (operand types are 'std::basic_ostream<char>' and 'std::ifstream' {aka 'std::basic_ifstream<char>'})
+     cout << "ARSE file_in=" << file_in << std::endl;
+     ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+PlotIt2.cpp:255:29: note: candidate: 'operator<<(int, int)' <built-in>
+PlotIt2.cpp:255:29: note:   no known conversion for argument 2 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:108:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:108:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:117:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:117:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:127:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:127:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::ios_base& (*)(std::ios_base&)'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:166:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(long __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:166:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long int'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:170:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:170:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long unsigned int'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:174:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(bool __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:174:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'bool'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:693,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:91:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:91:5: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short int'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:181:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:181:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short unsigned int'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:693,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:105:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:105:5: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:192:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:192:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'unsigned int'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:201:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(long long __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:201:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long int'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:205:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:205:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long unsigned int'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:220:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(double __f)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:220:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'double'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:224:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(float __f)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:224:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'float'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:232:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(long double __f)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:232:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long double'
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:245:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+       operator<<(const void* __p)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:245:7: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'const void*'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:693,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:119:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:119:5: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+In file included from C:\myIncludez\qtheadersMSwin\qstring.h:45,
+                 from c:\mingw\include\oglft\oglft.h:41,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qchar.h:400:28: note: candidate: 'QDataStream& operator<<(QDataStream&, const QChar&)'
+ Q_CORE_EXPORT QDataStream &operator<<(QDataStream &, const QChar &);
+                            ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qchar.h:400:28: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from C:\myIncludez\qtheadersMSwin\qstring.h:46,
+                 from c:\mingw\include\oglft\oglft.h:41,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qbytearray.h:597:28: note: candidate: 'QDataStream& operator<<(QDataStream&, const QByteArray&)'
+ Q_CORE_EXPORT QDataStream &operator<<(QDataStream &, const QByteArray &);
+                            ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qbytearray.h:597:28: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from c:\mingw\include\oglft\oglft.h:41,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qstring.h:1080:28: note: candidate: 'QDataStream& operator<<(QDataStream&, const QString&)'
+ Q_CORE_EXPORT QDataStream &operator<<(QDataStream &, const QString &);
+                            ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qstring.h:1080:28: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from C:\myIncludez\qtheadersMSwin\qiodevice.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qdatastream.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qobject.h:407:22: note: candidate: 'QDebug operator<<(QDebug, const QObject*)'
+ Q_CORE_EXPORT QDebug operator<<(QDebug, const QObject *);
+                      ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qobject.h:407:22: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDebug'
+In file included from C:\myIncludez\qtheadersMSwin\qdatastream.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qiodevice.h:247:22: note: candidate: 'QDebug operator<<(QDebug, QIODevice::OpenMode)'
+ Q_CORE_EXPORT QDebug operator<<(QDebug debug, QIODevice::OpenMode modes);
+                      ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qiodevice.h:247:22: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDebug'
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:261:14: note: candidate: 'template<class T> QDataStream& operator<<(QDataStream&, const QList<T>&)'
+ QDataStream& operator<<(QDataStream& s, const QList<T>& l)
+              ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:261:14: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QList<T>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:287:14: note: candidate: 'template<class T> QDataStream& operator<<(QDataStream&, const QLinkedList<T>&)'
+ QDataStream& operator<<(QDataStream& s, const QLinkedList<T>& l)
+              ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:287:14: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QLinkedList<T>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:312:14: note: candidate: 'template<class T> QDataStream& operator<<(QDataStream&, const QVector<T>&)'
+ QDataStream& operator<<(QDataStream& s, const QVector<T>& v)
+              ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:312:14: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QVector<T>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:337:14: note: candidate: 'template<class T> QDataStream& operator<<(QDataStream&, const QSet<T>&)'
+ QDataStream& operator<<(QDataStream &out, const QSet<T> &set)
+              ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:337:14: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QSet<T>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:376:35: note: candidate: 'template<class Key, class T> QDataStream& operator<<(QDataStream&, const QHash<Key, T>&)'
+ Q_OUTOFLINE_TEMPLATE QDataStream &operator<<(QDataStream &out, const QHash<Key, T>& hash)
+                                   ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:376:35: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QHash<Key, T>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:46,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qdatastream.h:422:35: note: candidate: 'template<class Key, class T> QDataStream& operator<<(QDataStream&, const QMap<aKey, aT>&)'
+ Q_OUTOFLINE_TEMPLATE QDataStream &operator<<(QDataStream &out, const QMap<Key, T> &map)
+                                   ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qdatastream.h:422:35: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const QMap<aKey, aT>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from C:\myIncludez\qtheadersMSwin\qstringlist.h:48,
+                 from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qregexp.h:159:28: note: candidate: 'QDataStream& operator<<(QDataStream&, const QRegExp&)'
+ Q_CORE_EXPORT QDataStream &operator<<(QDataStream &out, const QRegExp &regExp);
+                            ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qregexp.h:159:28: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from C:\myIncludez\qtheadersMSwin\qcolor.h:47,
+                 from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qstringlist.h:252:21: note: candidate: 'QDataStream& operator<<(QDataStream&, const QStringList&)'
+ inline QDataStream &operator<<(QDataStream &out, const QStringList &list)
+                     ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qstringlist.h:252:21: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from c:\mingw\include\oglft\oglft.h:42,
+                 from c:\myincludez\xfileswin32\truetype.h:1,
+                 from PlotIt2.cpp:29:
+C:\myIncludez\qtheadersMSwin\qcolor.h:60:21: note: candidate: 'QDebug operator<<(QDebug, const QColor&)'
+ Q_GUI_EXPORT QDebug operator<<(QDebug, const QColor &);
+                     ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qcolor.h:60:21: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDebug'
+C:\myIncludez\qtheadersMSwin\qcolor.h:274:38: note: candidate: 'QDataStream& operator<<(QDataStream&, const QColor&)'
+     friend Q_GUI_EXPORT QDataStream &operator<<(QDataStream &, const QColor &);
+                                      ^~~~~~~~
+C:\myIncludez\qtheadersMSwin\qcolor.h:274:38: note:   no known conversion for argument 1 from 'std::basic_ostream<char>' to 'QDataStream&'
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\string:52,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\basic_string.h:6314:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\basic_string.h:6314:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ios_base.h:46,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\system_error:217:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\system_error:217:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const std::error_code&'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:497:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)'
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:497:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::basic_ifstream<char>')
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:502:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)'
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:502:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:508:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)'
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:508:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:514:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)'
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:514:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'signed char'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:519:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)'
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:519:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'unsigned char'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:539:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)'
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:539:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   mismatched types 'const _CharT*' and 'std::basic_ifstream<char>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:693,
+                 from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:321:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)'
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:556:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)'
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:556:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:569:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)'
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:569:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const signed char*'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:574:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)'
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:574:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const unsigned char*'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iostream:39,
+                 from PlotIt2.h:32,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:682:5: note: candidate: 'template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)'
+     operator<<(_Ostream&& __os, const _Tp& __x)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:682:5: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream: In substitution of 'template<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::basic_ifstream<char>]':
+PlotIt2.cpp:255:32:   required from here
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\ostream:682:5: error: no type named 'type' in 'struct std::enable_if<false, std::basic_ostream<char>&>'
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:79:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:79:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Resetiosflags'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:109:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:109:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setiosflags'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:143:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:143:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setbase'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:178:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:178:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::basic_ifstream<char>' is not derived from 'std::_Setfill<_CharT>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:208:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:208:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setprecision'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:238:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:238:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   cannot convert 'file_in' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setw'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:311:5: note: candidate: 'template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:311:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_money<_MoneyT>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+In file included from PlotIt2.h:33,
+                 from PlotIt2.cpp:27:
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:363:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)'
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+     ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\8.2.0\include\c++\iomanip:363:5: note:   template argument deduction/substitution failed:
+PlotIt2.cpp:255:32: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_time<_CharT>'
+     cout << "ARSE file_in=" << file_in << std::endl;
+                                ^~~~~~~
+make: *** [PlotIt2.o] Error 1

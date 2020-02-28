@@ -1,0 +1,176 @@
+g++ -g  -c basicCube.cpp `sdl-config --cflags` -I/usr/include/freetype2
+In file included from basicCube.h:21,
+                 from basicCube.cpp:27:
+/usr/local/include/XFiles/D3Dvec.h: In member function ‘D3Dvec& D3Dvec::operator=(const D3Dvec&)’:
+/usr/local/include/XFiles/D3Dvec.h:230:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/usr/local/include/XFiles/D3Dvec.h: In member function ‘D3Dvec& D3Dvec::operator=(const D3Dvec*)’:
+/usr/local/include/XFiles/D3Dvec.h:240:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from basicCube.h:22,
+                 from basicCube.cpp:27:
+/usr/local/include/XFiles/Triangle.h: In member function ‘Triangle& Triangle::operator=(const Triangle&)’:
+/usr/local/include/XFiles/Triangle.h:305:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/usr/local/include/XFiles/Triangle.h: In member function ‘Triangle& Triangle::operator=(const Triangle*)’:
+/usr/local/include/XFiles/Triangle.h:343:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+basicCube.cpp: In function ‘void RenderScene(CCam&)’:
+basicCube.cpp:978:12: warning: narrowing conversion of ‘RedM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+   ~~~~~~~~~^
+basicCube.cpp:978:25: warning: narrowing conversion of ‘GreenM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+              ~~~~~~~~~~~^
+basicCube.cpp:978:37: warning: narrowing conversion of ‘BlueM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                           ~~~~~~~~~~^
+basicCube.cpp:978:50: warning: narrowing conversion of ‘AlphaM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                                       ~~~~~~~~~~~^
+basicCube.cpp:1030:34: warning: narrowing conversion of ‘RedL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                        ~~~~~~~~~~^
+basicCube.cpp:1030:49: warning: narrowing conversion of ‘GreenL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                     ~~~~~~~~~~~~^
+basicCube.cpp:1030:63: warning: narrowing conversion of ‘BlueL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                    ~~~~~~~~~~~^
+basicCube.cpp:1030:78: warning: narrowing conversion of ‘AlphaL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                                  ~~~~~~~~~~~~^
+basicCube.cpp:1031:34: warning: narrowing conversion of ‘RedL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                        ~~~~~~~~~~^
+basicCube.cpp:1031:49: warning: narrowing conversion of ‘GreenL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                     ~~~~~~~~~~~~^
+basicCube.cpp:1031:63: warning: narrowing conversion of ‘BlueL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                    ~~~~~~~~~~~^
+basicCube.cpp:1031:78: warning: narrowing conversion of ‘AlphaL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                                  ~~~~~~~~~~~~^
+basicCube.cpp:1032:35: warning: narrowing conversion of ‘RedL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                         ~~~~~~~~~~^
+basicCube.cpp:1032:50: warning: narrowing conversion of ‘GreenL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                      ~~~~~~~~~~~~^
+basicCube.cpp:1032:64: warning: narrowing conversion of ‘BlueL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                     ~~~~~~~~~~~^
+basicCube.cpp:1032:79: warning: narrowing conversion of ‘AlphaL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                                   ~~~~~~~~~~~~^
+In file included from basicCube.cpp:1142:
+../../XFiles/Init.cpp: In function ‘void Init()’:
+../../XFiles/Init.cpp:144:34: warning: narrowing conversion of ‘RedL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                        ~~~~~~~~~~^
+../../XFiles/Init.cpp:144:49: warning: narrowing conversion of ‘GreenL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                     ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:144:63: warning: narrowing conversion of ‘BlueL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                    ~~~~~~~~~~~^
+../../XFiles/Init.cpp:144:78: warning: narrowing conversion of ‘AlphaL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                                  ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:145:34: warning: narrowing conversion of ‘RedL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                        ~~~~~~~~~~^
+../../XFiles/Init.cpp:145:49: warning: narrowing conversion of ‘GreenL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                     ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:145:63: warning: narrowing conversion of ‘BlueL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                    ~~~~~~~~~~~^
+../../XFiles/Init.cpp:145:78: warning: narrowing conversion of ‘AlphaL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                                  ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:146:35: warning: narrowing conversion of ‘RedL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                         ~~~~~~~~~~^
+../../XFiles/Init.cpp:146:50: warning: narrowing conversion of ‘GreenL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                      ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:146:64: warning: narrowing conversion of ‘BlueL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                     ~~~~~~~~~~~^
+../../XFiles/Init.cpp:146:79: warning: narrowing conversion of ‘AlphaL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                                   ~~~~~~~~~~~~^
+../../XFiles/Init.cpp:302:12: warning: narrowing conversion of ‘RedM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+   ~~~~~~~~~^
+../../XFiles/Init.cpp:302:25: warning: narrowing conversion of ‘GreenM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+              ~~~~~~~~~~~^
+../../XFiles/Init.cpp:302:37: warning: narrowing conversion of ‘BlueM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                           ~~~~~~~~~~^
+../../XFiles/Init.cpp:302:50: warning: narrowing conversion of ‘AlphaM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                                       ~~~~~~~~~~~^
+basicCube.cpp: In function ‘void DrawScene(bool)’:
+basicCube.cpp:1172:34: warning: narrowing conversion of ‘RedM[1][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_amb[4]={RedM[1][0], GreenM[1][0],BlueM[1][0],
+                         ~~~~~~~~~^
+basicCube.cpp:1172:48: warning: narrowing conversion of ‘GreenM[1][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_amb[4]={RedM[1][0], GreenM[1][0],BlueM[1][0],
+                                     ~~~~~~~~~~~^
+basicCube.cpp:1172:60: warning: narrowing conversion of ‘BlueM[1][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_amb[4]={RedM[1][0], GreenM[1][0],BlueM[1][0],
+                                                  ~~~~~~~~~~^
+basicCube.cpp:1173:30: warning: narrowing conversion of ‘AlphaM[1][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+                   AlphaM[1][0] };
+                   ~~~~~~~~~~~^
+basicCube.cpp:1174:35: warning: narrowing conversion of ‘RedM[1][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_diff[4]={RedM[1][1], GreenM[1][1],BlueM[1][1],
+                          ~~~~~~~~~^
+basicCube.cpp:1174:49: warning: narrowing conversion of ‘GreenM[1][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_diff[4]={RedM[1][1], GreenM[1][1],BlueM[1][1],
+                                      ~~~~~~~~~~~^
+basicCube.cpp:1174:61: warning: narrowing conversion of ‘BlueM[1][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_diff[4]={RedM[1][1], GreenM[1][1],BlueM[1][1],
+                                                   ~~~~~~~~~~^
+basicCube.cpp:1175:30: warning: narrowing conversion of ‘AlphaM[1][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+                   AlphaM[1][1] };
+                   ~~~~~~~~~~~^
+basicCube.cpp:1176:35: warning: narrowing conversion of ‘RedM[1][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_spec[4]={RedM[1][2], GreenM[1][2],BlueM[1][2],
+                          ~~~~~~~~~^
+basicCube.cpp:1176:49: warning: narrowing conversion of ‘GreenM[1][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_spec[4]={RedM[1][2], GreenM[1][2],BlueM[1][2],
+                                      ~~~~~~~~~~~^
+basicCube.cpp:1176:61: warning: narrowing conversion of ‘BlueM[1][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float mat_spec[4]={RedM[1][2], GreenM[1][2],BlueM[1][2],
+                                                   ~~~~~~~~~~^
+basicCube.cpp:1177:30: warning: narrowing conversion of ‘AlphaM[1][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+                   AlphaM[1][2] };
+                   ~~~~~~~~~~~^
+basicCube.cpp:1178:33: warning: narrowing conversion of ‘ShineM[1][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+       float shine[]={ShineM[1][0]};
+                      ~~~~~~~~~~~^
+In file included from /usr/local/include/XFiles/Dmatrix.h:3,
+                 from basicCube.h:130,
+                 from basicCube.cpp:27:
+/usr/local/include/XFiles/Dvector.h: In member function ‘Dvector& Dvector::operator=(const Dvector&)’:
+/usr/local/include/XFiles/Dvector.h:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from basicCube.h:130,
+                 from basicCube.cpp:27:
+/usr/local/include/XFiles/Dmatrix.h: In member function ‘Dmatrix& Dmatrix::operator=(const Dmatrix&)’:
+/usr/local/include/XFiles/Dmatrix.h:235:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc -g -c gl2ps.c 
+g++ -g -o basicCube basicCube.o  gl2ps.o  \
+ `sdl-config --libs` -lGL -lGLU -lOGLFT  -lm -lslatec -lseagods -lgfortran

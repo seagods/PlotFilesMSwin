@@ -1,0 +1,35 @@
+Arrived in Main
+Hardware not Available, using software
+height=600  width=800
+height=600  width=800
+Call event loop with argc=1
+Creating Camera CCam 
+Font 1 is fine!
+Font 2 is fine!
+Font 3 is fine!
+Font 4 is fine!
+Font 5 is fine!
+Font 6 is fine!
+Font 7 is fine!
+Font 8 is fine!
+Font 9 is fine!
+Font 10 is fine!
+Font 11 is fine!
+Font 12 is fine!
+Font 13 is fine!
+file_in=data.dat
+argc=1
+last z value was  9.79912
+we are plotting 2 data sets 
+ x axis label in data.dat is 
+ y axis label in data.dat is 
+ z axis label in data.dat is Giraffes
+ x axis unit in data.dat is 
+ y axis unit in data.dat is 
+ z axis unit in data.dat is per season
+xmin and xmax are -90.0002  90.0002
+ymin and ymax are -90.0002  90.0002
+zmin and zmax are -3.33378  9.98672
+xrange and xfact are 180  100
+yrange and yfact are 180  100
+zrange and zfact are 13.3205  10

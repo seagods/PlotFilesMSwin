@@ -1,0 +1,16 @@
+TARGET		=PlotIt
+
+$(TARGET):	PlotIt.o   gl2ps.o 
+	g++ -g -o $(TARGET) PlotIt.o gl2ps.o \
+		-LC:/MinGW/lib -lOGLFT -LC:/MinGW/lib -lmingw32 -LC:/MinGW/lib/SDL1 -lSDL1 \
+   -lglu32 -lopengl32 -lseagods -lgfortran -mwindows
+	
+PlotIt.o:
+	g++ -g  -c -fpermissive PlotIt.cpp -IC:/minGW/include/SDL1 -D_GNU_SOURCE=1 -Dmain=SDL_main          
+                
+
+gl2ps.o:
+	gcc -g -c gl2ps.c 
+
+clean:
+	rm -f $(TARGET) *.o  core

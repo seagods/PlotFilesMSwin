@@ -1,0 +1,9 @@
+Arrived in Main
+Hardware not Available, using software
+height=600  width=800
+height=600  width=800
+Call event loop with argc=1
+Creating Camera CCam 
+nodes=3315
+edges=17922
+Here

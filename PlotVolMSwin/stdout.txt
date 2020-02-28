@@ -1,0 +1,74 @@
+Arrived in Main
+Hardware not Available, using software
+height=600  width=800
+height=600  width=800
+Call event loop with argc=1
+Creating Camera CCam 
+Font 1 is fine!
+Font 2 is fine!
+Font 3 is fine!
+Font 4 is fine!
+Font 5 is fine!
+Font 6 is fine!
+Font 7 is fine!
+Font 8 is fine!
+Font 9 is fine!
+Font 10 is fine!
+Font 11 is fine!
+Font 12 is fine!
+Font 13 is fine!
+We have 3315 nodes and 13440 tetrahedra 
+periodics x y and z are 0 0 0
+x min and max -8 8
+y min and max -8 6
+z min and max -8 4
+w min and max 0.00647689 2.01189
+ x axis label in data.dat is daily quota
+ y axis label in data.dat is yearly loss
+ z axis label in data.dat is Giraffes
+ w axis label in data.dat is Lions
+ x axis unit in data.dat is Kg per year
+ y axis unit in data.dat is per tonne
+ z axis unit in data.dat is per season
+ w axis unit in data.dat is Bears per acre
+xrange and xfact are 16  10
+yrange and yfact are 14  10
+zrange and zfact are 12  10
+wrange and wfact are 2.00541  1
+0 0.25
+called surfgrow from main with it=45  wc=0.25 id=0 newtris=1909  newvecs=1069
+idtotal is 1
+called surfgrow from main with it=11200  wc=0.25 id=1 newtris=1934  newvecs=1092
+idtotal is 2
+1 0.5
+called surfgrow from main with it=1  wc=0.5 id=0 newtris=1957  newvecs=1114
+idtotal is 1
+called surfgrow from main with it=25  wc=0.5 id=1 newtris=4485  newvecs=2491
+idtotal is 2
+2 0.75
+called surfgrow from main with it=8  wc=0.75 id=0 newtris=7234  newvecs=3971
+idtotal is 1
+3 1
+called surfgrow from main with it=93  wc=1 id=0 newtris=9955  newvecs=5402
+idtotal is 1
+4 1.25
+called surfgrow from main with it=1211  wc=1.25 id=0 newtris=11415  newvecs=6134
+idtotal is 1
+called surfgrow from main with it=8533  wc=1.25 id=1 newtris=12109  newvecs=6513
+idtotal is 2
+5 1.5
+called surfgrow from main with it=1378  wc=1.5 id=0 newtris=12981  newvecs=6951
+idtotal is 1
+called surfgrow from main with it=8696  wc=1.5 id=1 newtris=13471  newvecs=7220
+idtotal is 2
+6 1.75
+called surfgrow from main with it=2496  wc=1.75 id=0 newtris=13855  newvecs=7414
+idtotal is 1
+called surfgrow from main with it=9896  wc=1.75 id=1 newtris=14139  newvecs=7570
+idtotal is 2
+7 2
+called surfgrow from main with it=4736  wc=2 id=0 newtris=14171  newvecs=7588
+idtotal is 1
+called surfgrow from main with it=12136  wc=2 id=1 newtris=14203  newvecs=7606
+idtotal is 2
+CCam Destructor  

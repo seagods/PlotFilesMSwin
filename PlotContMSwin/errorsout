@@ -1,0 +1,5 @@
+g++ -g -o PlotCont PlotCont.o  gl2ps.o  \
+ `sdl-config --libs` -lGL -lGLU -lOGLFT -lmi -lslatec -lseagods -lgfortran
+/usr/bin/ld: cannot find -lmi
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: PlotCont] Error 1

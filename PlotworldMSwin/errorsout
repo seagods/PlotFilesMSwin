@@ -1,0 +1,110 @@
+g++ -g  -c PlotWorld.cpp `sdl-config --cflags` -I/usr/include/freetype2  -I/usr/freetype2/config
+In file included from PlotWorld.h:50,
+                 from PlotWorld.cpp:26:
+/usr/local/include/XFiles/D3Dvec.h: In member function ‘D3Dvec& D3Dvec::operator=(const D3Dvec&)’:
+/usr/local/include/XFiles/D3Dvec.h:230:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/usr/local/include/XFiles/D3Dvec.h: In member function ‘D3Dvec& D3Dvec::operator=(const D3Dvec*)’:
+/usr/local/include/XFiles/D3Dvec.h:240:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from PlotWorld.h:51,
+                 from PlotWorld.cpp:26:
+/usr/local/include/XFiles/D2Dvec.h: In member function ‘D2Dvec& D2Dvec::operator=(const D2Dvec&)’:
+/usr/local/include/XFiles/D2Dvec.h:175:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/usr/local/include/XFiles/D2Dvec.h: In member function ‘D2Dvec& D2Dvec::operator=(const D2Dvec*)’:
+/usr/local/include/XFiles/D2Dvec.h:184:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+In file included from PlotWorld.h:52,
+                 from PlotWorld.cpp:26:
+/usr/local/include/XFiles/Triangle.h: In member function ‘Triangle& Triangle::operator=(const Triangle&)’:
+/usr/local/include/XFiles/Triangle.h:305:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+/usr/local/include/XFiles/Triangle.h: In member function ‘Triangle& Triangle::operator=(const Triangle*)’:
+/usr/local/include/XFiles/Triangle.h:343:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+PlotWorld.cpp: In function ‘void RenderScene(CCam&)’:
+PlotWorld.cpp:837:12: warning: narrowing conversion of ‘RedM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+   ~~~~~~~~~^
+PlotWorld.cpp:837:25: warning: narrowing conversion of ‘GreenM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+              ~~~~~~~~~~~^
+PlotWorld.cpp:837:37: warning: narrowing conversion of ‘BlueM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                           ~~~~~~~~~~^
+PlotWorld.cpp:837:50: warning: narrowing conversion of ‘AlphaM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                                       ~~~~~~~~~~~^
+In file included from PlotWorld.cpp:963:
+/usr/local/include/XFiles/Init.cpp: In function ‘void Init()’:
+/usr/local/include/XFiles/Init.cpp:144:34: warning: narrowing conversion of ‘RedL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                        ~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:144:49: warning: narrowing conversion of ‘GreenL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                     ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:144:63: warning: narrowing conversion of ‘BlueL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                    ~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:144:78: warning: narrowing conversion of ‘AlphaL[il][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float ambient[4]={RedL[il][0], GreenL[il][0], BlueL[il][0], AlphaL[il][0]};
+                                                                  ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:145:34: warning: narrowing conversion of ‘RedL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                        ~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:145:49: warning: narrowing conversion of ‘GreenL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                     ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:145:63: warning: narrowing conversion of ‘BlueL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                    ~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:145:78: warning: narrowing conversion of ‘AlphaL[il][1]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float diffuse[4]={RedL[il][1], GreenL[il][1], BlueL[il][1], AlphaL[il][1]};
+                                                                  ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:146:35: warning: narrowing conversion of ‘RedL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                         ~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:146:50: warning: narrowing conversion of ‘GreenL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                      ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:146:64: warning: narrowing conversion of ‘BlueL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                     ~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:146:79: warning: narrowing conversion of ‘AlphaL[il][2]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+      float specular[4]={RedL[il][2], GreenL[il][2], BlueL[il][2], AlphaL[il][2]};
+                                                                   ~~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:302:12: warning: narrowing conversion of ‘RedM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+   ~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:302:25: warning: narrowing conversion of ‘GreenM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+              ~~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:302:37: warning: narrowing conversion of ‘BlueM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                           ~~~~~~~~~~^
+/usr/local/include/XFiles/Init.cpp:302:50: warning: narrowing conversion of ‘AlphaM[0][0]’ from ‘double’ to ‘float’ inside { } [-Wnarrowing]
+  {RedM[0][0],GreenM[0][0],BlueM[0][0],AlphaM[0][0]};
+                                       ~~~~~~~~~~~^
+In file included from /usr/local/include/XFiles/Dmatrix.h:3,
+                 from PlotWorld.h:155,
+                 from PlotWorld.cpp:26:
+/usr/local/include/XFiles/Dvector.h: In member function ‘Dvector& Dvector::operator=(const Dvector&)’:
+/usr/local/include/XFiles/Dvector.h:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from PlotWorld.h:155,
+                 from PlotWorld.cpp:26:
+/usr/local/include/XFiles/Dmatrix.h: In member function ‘Dmatrix& Dmatrix::operator=(const Dmatrix&)’:
+/usr/local/include/XFiles/Dmatrix.h:235:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc -g -c gl2ps.c 
+g++ -g -o PlotWorld PlotWorld.o  gl2ps.o  \
+ `sdl-config --libs` -lGL -lGLU -lOGLFT  -lm -lslatec -lseagods -lgfortran
